@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Mail, MapPin, Instagram } from "lucide-react";
+import { Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Contact = () => {
@@ -40,71 +40,53 @@ const Contact = () => {
                 <h2 className="font-display text-xl text-foreground tracking-wide mb-6">
                   Get in Touch
                 </h2>
-                <div className="space-y-4">
-                  <a href="mailto:mharorajasthan@vitbhopal.ac.in" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-saffron transition-colors">
-                    <div className="p-2 rounded-sm bg-muted border border-border">
-                      <Mail size={16} className="text-saffron" />
-                    </div>
-                    mharorajasthan@vitbhopal.ac.in
-                  </a>
-                  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="p-2 rounded-sm bg-muted border border-border">
-                      <MapPin size={16} className="text-saffron" />
-                    </div>
-                    VIT Bhopal University, Madhya Pradesh
-                  </div>
-                  <a href="#" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-saffron transition-colors">
-                    <div className="p-2 rounded-sm bg-muted border border-border">
-                      <Instagram size={16} className="text-saffron" />
-                    </div>
-                    @mharorajasthan_vitb
-                  </a>
-                </div>
-              </div>
-            </ScrollReveal>
+               <div className="space-y-4">
+  {/* Email */}
+  <a
+    href="mailto:mharorajasthanvitb@gmail.com"
+    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-saffron transition-colors"
+  >
+    <div className="p-2 rounded-sm bg-muted border border-border">
+      <Mail size={16} className="text-saffron" />
+    </div>
+    mharorajasthanvitb@gmail.com
+  </a>
 
-            <ScrollReveal direction="right" delay={200}>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">Name</label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="w-full px-4 py-3 bg-card border border-border rounded-sm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-saffron/50 transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">Email</label>
-                  <input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="w-full px-4 py-3 bg-card border border-border rounded-sm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-saffron/50 transition-colors"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">Message</label>
-                  <textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-sm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-saffron/50 transition-colors resize-none"
-                    placeholder="Your message..."
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full py-3 text-xs tracking-[0.3em] uppercase font-medium bg-primary text-primary-foreground rounded-sm hover:opacity-90 active:scale-[0.97] transition-all duration-200"
-                >
-                  Send Message
-                </button>
-              </form>
+  {/* Location */}
+  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+    <div className="p-2 rounded-sm bg-muted border border-border">
+      <MapPin size={16} className="text-saffron" />
+    </div>
+    VIT Bhopal University, Madhya Pradesh
+  </div>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/mharo.rajasthan_vitb?igsh=NnRkdzdrZmcydGFl"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-saffron transition-colors"
+  >
+    <div className="p-2 rounded-sm bg-muted border border-border">
+      <Instagram size={16} className="text-saffron" />
+    </div>
+    @mharorajasthan_vitb
+  </a>
+
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/mharo-rajasthan-club-50803835a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 text-sm text-muted-foreground hover:text-saffron transition-colors"
+  >
+    <div className="p-2 rounded-sm bg-muted border border-border">
+      <Linkedin size={16} className="text-saffron" />
+    </div>
+    Mharo Rajasthan Club
+  </a>
+</div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
