@@ -73,12 +73,6 @@ const HeroSection = () => {
           </div>
 
           {/* Status badge */}
-          <div className="mt-10 inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-muted border border-border opacity-0 animate-fade-up" style={{ animationDelay: "0.9s" }}>
-            <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs tracking-widest uppercase text-muted-foreground">
-              Recruitments Open — Core Team 2025
-            </span>
-          </div>
         </div>
       </div>
     </section>
