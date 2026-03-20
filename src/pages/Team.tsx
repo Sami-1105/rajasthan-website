@@ -4,14 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const teamMembers = [
-  { name: "Arjun Rathore", role: "President", initials: "AR" },
-  { name: "Priya Shekhawat", role: "Vice President", initials: "PS" },
+  { name: "Manish Chaudhary", role: "President", initials: "MC" },
+  { name: "Yuvraj Rajpurohit", role: "Vice President", initials: "YR" },
   { name: "Vikram Singh Rajput", role: "General Secretary", initials: "VS" },
   { name: "Kavita Meena", role: "Cultural Head", initials: "KM" },
   { name: "Rohit Joshi", role: "Events Head", initials: "RJ" },
   { name: "Nandini Sharma", role: "PR & Outreach", initials: "NS" },
-  { name: "Dheeraj Chouhan", role: "Creative Head", initials: "DC" },
-  { name: "Mansi Kanwar", role: "Media Head", initials: "MK" },
+  { name: "Nabh Garg", role: "Technical Head", initials: "NG" },
+  { name: "Mansi Kanwar", role: "Social-Media Head", initials: "MK" },
 ];
 
 const Team = () => {
